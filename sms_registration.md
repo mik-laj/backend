@@ -10,7 +10,6 @@ Proces rejestracji jest najbardziej newralgicznym elementem naszego systemu. Mus
 
 Jak osiągnąć powyższe:
 * jeśli z jakiegoś IP przychodzą żądania rejestracji, które nie kończą się powodzeniem, pozwalamy zrobić kolejne (wysłać SMS) po odczekaniu jakiegoś timeout'u
-* nie wysyłamy SMSa na ten sam numer częściej niż 1 na minutę
 * nie wysyłamy SMSa na ten sam numer częściej niż 4 na godzinę
 * kod weryfikacyjny jest taki sam przez 10 minut. To znaczy, że jeśli ktoś w ciągu 10 minut jeszcze raz wywoła `/register` dla takiego samego numeru dostanie taki sam kod (!)
 * kod weryfikacyjny jest ważny przez 10 minut. Użytkownik ma 10 minut na wpisanie poprawnego kodu
